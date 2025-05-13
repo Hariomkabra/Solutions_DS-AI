@@ -286,13 +286,20 @@ li.dropdown:hover .dropdown-menu {
     height: 80%;
     overflow: hidden;
     z-index: 5;
-    opacity: 0.2;
+    opacity: 0.4; 
+    border-radius: 40px;
+
+  
+
 }
 
 .hero-image img {
     width: 100%;
     height: 60%;
     object-fit: cover;
+    border-bottom-left-radius: 40px;
+    
+
 }
 
 /* Button Styles */
