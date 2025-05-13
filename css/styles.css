@@ -289,8 +289,6 @@ li.dropdown:hover .dropdown-menu {
     opacity: 0.4; 
     border-radius: 40px;
 
-  
-
 }
 
 .hero-image img {
@@ -299,7 +297,6 @@ li.dropdown:hover .dropdown-menu {
     object-fit: cover;
     border-bottom-left-radius: 40px;
     
-
 }
 
 /* Button Styles */
