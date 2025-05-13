@@ -1015,6 +1015,228 @@ li.dropdown:hover .dropdown-menu {
     min-height: 150px;
 }
 
+/*AI -Seevices*/
+/*point of View*/
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 36px;
+ 
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.intro {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #e0e0e0;
+    margin-bottom: 40px;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.column {
+    flex: 1;
+}
+
+.column h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.column p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.bullet-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bullet-points li {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.bullet-points li:before {
+    content: "•";
+    color: #ff6347;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.bullet-points li strong {
+    color: #333;
+}
+/*End point of View*/
+
+/*HOW WE CAN HELP*/
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+}
+
+.main-text {
+    flex: 2;
+}
+
+.main-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.bullet-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bullet-points li {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.bullet-points li:before {
+    content: "•";
+    color: #ff6347;
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+}
+
+.quote-section {
+    flex: 1;
+    background-color: #e6f0fa;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.quote-section:before {
+    content: "“";
+    font-size: 40px;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.quote-section blockquote {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.signature {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    margin-top: 20px;
+    text-align: right;
+}
+
+/* Badge Container */
+.badge {
+    position: absolute;
+    bottom: 2%;
+   ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    z-index: 999;
+}
+
+/* Badge Image */
+.badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    pointer-events: none; /* Prevent image from interfering with click */
+}
+
+/* Hover Effect */
+.badge:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+
+/*End HOW WE CAN HELP*/
+
+
 /* Footer */
 /* Footer */
 .footer {
@@ -1189,3 +1411,4 @@ li.dropdown:hover .dropdown-menu {
     margin-top: 20px;
     
 }
+
