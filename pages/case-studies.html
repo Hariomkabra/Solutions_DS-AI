@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies - DS AI Solutions</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <span>Pranalika </span> Solutions
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                   
+                           <li class="dropdown">
+                        <a href="#services">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#data-analytics">Data Analytics</a></li>
+                            <li><a href="#ai-services">AI Services</a></li>
+                        </ul>
+                        </li>
+
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="case-studies.html" class="active">Case Studies</a></li>
+                   
+                   
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Case Studies</h1>
+            <p>Explore how our data analytics and AI solutions have helped organizations across industries solve complex challenges and achieve remarkable results.</p>
+        </div>
+    </section>
+
+   <section id="trends">
+    <div class="container">
+        <div class="section-header">
+            <h2>Stories</h2>
+            <p>Stay ahead with the latest insights in AI and data science.</p>
+        </div>
+        <div class="trends-grid">
+            <div class="trend-card">
+                <div class="trend-image">
+                    <img src="https://images.pexels.com/photos/3913025/pexels-photo-3913025.jpeg" alt="AI in Healthcare">
+                </div>
+                <div class="trend-content">
+                    <span class="trend-category">AI</span>
+                    <h3>AI in Healthcare</h3>
+                    <p>Discover how AI is revolutionizing healthcare with predictive diagnostics and personalized treatment plans.</p>
+                    <a href="#" class="trend-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="trend-card">
+                <div class="trend-image">
+                    <img src="https://images.pexels.com/photos/7567557/pexels-photo-7567557.jpeg" alt="Big Data Analytics">
+                </div>
+                <div class="trend-content">
+                    <span class="trend-category">Analytics</span>
+                    <h3>Big Data Analytics</h3>
+                    <p>Explore the power of big data analytics in driving business decisions and uncovering hidden opportunities.</p>
+                    <a href="#" class="trend-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="trend-card">
+                <div class="trend-image">
+                    <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg" alt="Automation Trends">
+                </div>
+                <div class="trend-content">
+                    <span class="trend-category">Automation</span>
+                    <h3>Automation Trends</h3>
+                    <p>Learn about the latest trends in automation that are streamlining operations across industries.</p>
+                    <a href="#" class="trend-link">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Trends Section */
+#trends {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: var(--text-color);
+    margin-bottom: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+}
+
+.section-header p {
+    color: var(--text-light);
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.trends-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.trend-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.trend-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.trend-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.trend-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.trend-card:hover .trend-image img {
+    transform: scale(1.1);
+}
+
+.trend-content {
+    padding: 24px;
+}
+
+.trend-category {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--primary-color);
+    padding: 4px 12px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.trend-content h3 {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.trend-content p {
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.trend-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.trend-link i {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.trend-link:hover {
+    color: var(--primary-dark);
+}
+
+.trend-link:hover i {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 992px) {
+    .trends-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 576px) {
+    .trends-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+   <!--footer-->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2><i class="fa-solid fa-cube"></i> Pranalika Solutions</h2>
+            <p>Transforming businesses through cutting-edge data analytics and AI solutions.</p>
+            <ul class="contact-info">
+                <li><i class="fa-solid fa-location-dot"></i> 123 Innovation Drive, Tech Park, CA 94103</li>
+                <li><i class="fa-solid fa-phone"></i> (555) 123-4567</li>
+                <li><i class="fa-solid fa-envelope"></i> info@dataaisolutions.com</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Data Analytics</a></li>
+                <li><a href="#">AI services</a></li>
+                <li><a href="#">Data Engineering</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest insights and updates on data analytics and AI delivered to your inbox.</p>
+            <form>
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+                 <p>
+                  Copyright &copy;
+                  <script>document.write(new Date().getFullYear());</script> All Rights Reserved | Powered by <a href="https://meghplat.com/" target="_blank" class="text-primary">Meghplat Analytics</a>
+              </p>
+    </div>
+</footer>
+<!--End Footer-->
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DS AI Solutions - Transforming Business Through AI</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span>Pranalika </span>Solutions
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                   
+                    <li class="dropdown">
+                        <a href="#services">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#data-analytics">Data Analytics</a></li>
+                            <li><a href="#ai-services">AI Services</a></li>
+                        </ul>
+                        </li>
+
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/case-studies.html">Case Studies</a></li>
+                   
+                
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--hero-->
+    <section id="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Transforming Business Through <span class="typewriter" data-text='["AI", "Data Science", "Machine Learning", "Analytics"]'></span></h1>
+            <p>We help organizations leverage the power of artificial intelligence and data science to drive innovation, efficiency, and growth.</p>
+            <div class="hero-buttons">
+                <a href="/pages/services.html" class="btn btn-primary" onclick="console.log('Explore Services clicked')">Explore Services</a>
+                <a href="/pages/contact.html" class="btn btn-secondary" onclick="console.log('Get in Touch clicked')">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg" alt="AI and Data Science">
+        </div>
+    </div>
+    <div class="hero-wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffffff" fill-opacity="1" d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,266.7C960,267,1056,245,1152,208C1248,171,1344,117,1392,90.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+</section>
+
+<script>
+    // Ensure no event listeners are blocking the default link behavior
+    document.querySelectorAll('.btn').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.stopPropagation(); // Prevent any parent elements from interfering
+            console.log(`${button.textContent} link clicked, navigating to: ${button.href}`);
+        });
+    });
+</script>
+
+    <!--End hero-->
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Cutting-edge solutions powered by AI and data science</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                    <p>Develop custom ML models tailored to your business needs for predictive analytics, classification, and pattern recognition.</p>
+                    <a href="pages/services.html" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Consulting</h3>
+                    <p>Strategic guidance on implementing AI initiatives, roadmap creation, and technology selection for maximum ROI.</p>
+                    <a href="pages/services.html" class="btn btn-primary">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Transform raw data into actionable insights with advanced analytics, visualization, and business intelligence.</p>
+                    <a href="pages/services.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <!--Testimonials-->
+
+ 
+        <div class="container">
+            <div class="section-header">
+            <h1>Client Testimonials</h1>
+            <p>See what our clients say about working with us</p>
+            </div>
+        </div>
+
+
+   <section id="testimonials-detail">
+    <div class="container">
+        <div class="testimonials-slider">
+            <div class="testimonial-container">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"DS AI Solutions helped us implement a predictive maintenance system that reduced our downtime by 35% and maintenance costs by 25%. Their expertise in machine learning and deep understanding of our industry was invaluable."</p>
+                        <div class="testimonial-author">
+                            <img src="https://www.for-image.com/wp-content/uploads/2023/01/LinkedIn-studio-headshot-photographer-london-1024x1024.jpg" alt="John Smith">
+                            <div class="author-info">
+                                <h4>John Smith</h4>
+                                <p>CTO, Global Manufacturing Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The customer segmentation solution developed by DS AI Solutions transformed our marketing strategy. We've seen a 40% increase in campaign ROI and significantly improved customer retention rates."</p>
+                        <div class="testimonial-author">
+                            <img src="https://media.istockphoto.com/id/1317804584/photo/one-businesswoman-studio-portrait-looking-at-the-camera.jpg?s=612x612&w=0&k=20&c=Tx3nGQfxaI781gi97Siw7DIEBbKg1oBxl8n0JEwMQ6s=" alt="Emily Wong">
+                            <div class="author-info">
+                                <h4>Emily Wong</h4>
+                                <p>Marketing Director, Retail Group</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"DS AI Solutions revolutionized our supply chain with an AI-driven forecasting model, cutting inventory costs by 30% and improving delivery times. Their team’s dedication and technical skills are unmatched."</p>
+                        <div class="testimonial-author">
+                            <img src="https://media.istockphoto.com/id/931346616/photo/portrait-of-stunning-trendy-attractive-dreamy-perfect-man-in-black-suit-with-tie-fasten-button.jpg?s=612x612&w=0&k=20&c=Dz0XbfsgaUg5LD2m1eyou7Lkgw6woCm-BkhZSo2okUw=" alt="Michael Carter">
+                            <div class="author-info">
+                                <h4>Michael Carter</h4>
+                                <p>Operations Manager, Logistics Corp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Thanks to DS AI Solutions, we deployed a fraud detection system that saved us millions by identifying risks in real-time. Their innovative approach and deep AI expertise made all the difference."</p>
+                        <div class="testimonial-author">
+                            <img src="https://img.freepik.com/free-photo/happy-latin-businesswoman-standing-with-arms-crossed-against-isolated-background_662251-639.jpg" alt="Sarah Johnson">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Head of Security, FinTech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="testimonial-prev"><i class="fas fa-arrow-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                </div>
+                <button class="testimonial-next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    const testimonials = document.querySelectorAll('.testimonial');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.querySelector('.testimonial-prev');
+    const nextBtn = document.querySelector('.testimonial-next');
+    let currentIndex = 0;
+    let autoSlideInterval;
+
+    function showTestimonial(index) {
+        testimonials.forEach((testimonial, i) => {
+            testimonial.classList.remove('active');
+            dots[i].classList.remove('active');
+        });
+
+        testimonials[index].classList.add('active');
+        dots[index].classList.add('active');
+        currentIndex = index;
+    }
+
+    function nextTestimonial() {
+        let nextIndex = (currentIndex + 1) % testimonials.length;
+        showTestimonial(nextIndex);
+    }
+
+    function prevTestimonial() {
+        let prevIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+        showTestimonial(prevIndex);
+    }
+
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextTestimonial, 5000); // Change every 5 seconds
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        startAutoSlide();
+    }
+
+    // Event listeners for manual controls
+    nextBtn.addEventListener('click', () => {
+        nextTestimonial();
+        resetAutoSlide();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        prevTestimonial();
+        resetAutoSlide();
+    });
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+            const index = parseInt(dot.getAttribute('data-slide'));
+            showTestimonial(index);
+            resetAutoSlide();
+        });
+    });
+
+    // Start the auto-slide when the page loads
+    startAutoSlide();
+</script>
+
+       <!--End Testimonials-->
+
+<!--footer-->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h2><i class="fa-solid fa-cube"></i> Pranalika Solutions</h2>
+            <p>Transforming businesses through cutting-edge data analytics and AI solutions.</p>
+            <ul class="contact-info">
+                <li><i class="fa-solid fa-location-dot"></i> 123 Innovation Drive, Tech Park, CA 94103</li>
+                <li><i class="fa-solid fa-phone"></i> (555) 123-4567</li>
+                <li><i class="fa-solid fa-envelope"></i> info@dataaisolutions.com</li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Services</h3>
+            <ul>
+                <li><a href="#">Data Analytics</a></li>
+                <li><a href="#">AI services</a></li>
+                <li><a href="#">Data Engineering</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest insights and updates on data analytics and AI delivered to your inbox.</p>
+            <form>
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+       <p>
+                  Copyright &copy;
+                  <script>document.write(new Date().getFullYear());</script> All Rights Reserved | Powered by <a href="https://meghplat.com/" target="_blank" class="text-primary">Meghplat Analytics</a>
+              </p>
+    </div>
+</footer>
+<!--End Footer-->
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
