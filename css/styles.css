@@ -48,10 +48,11 @@
 }
 
 /* Header */
+/* Header styling */
 #header {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 10px;
     width: 100%;
     z-index: 1000;
     background-color: transparent;
@@ -62,18 +63,22 @@
 #header.scrolled {
     background-color: var(--white);
     box-shadow: var(--shadow);
-    padding: 2px 0;
+    padding: 10px 0; /* Slightly increased padding for better spacing */
 }
 
+/* Container to hold logo and nav */
 #header .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
-    margin-bottom: 0;
-   
+    max-width: 1200px; /* Added max-width for better control */
+    margin: 0 auto; /* Center the container */
+    padding:  20px; /* Added padding for better spacing */
 }
 
+/* Logo styling */
+.logo {
+    flex: 0 0 auto; /* Prevent logo from stretching */
+}
 
 .logo a {
     font-size: 24px;
@@ -81,14 +86,11 @@
     color: var(--white);
     display: flex;
     align-items: center;
+    text-decoration: none; /* Ensure no underline */
 }
 
 #header.scrolled .logo a {
     color: var(--primary-color);
-}
-
-#header, #header .container, .logo a, .nav-links a {
-    transition: all 0.3s ease;
 }
 
 .logo span {
@@ -104,15 +106,27 @@
     color: var(--white);
 }
 
+/* Navigation wrapper to center nav-links and buttons */
+.nav-wrapper {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    justify-content: center; /* Center the nav content */
+    align-items: center;
+}
+
+/* Nav links styling */
 .nav-links {
     display: flex;
-    gap: 24px;
+    gap: 65px;
+    align-items: center;
+    margin: 0 20px; /* Add spacing around nav-links */
 }
 
 .nav-links a {
     color: var(--white);
     font-weight: 500;
     position: relative;
+    text-decoration: none;
 }
 
 #header.scrolled .nav-links a {
@@ -135,69 +149,41 @@
     width: 100%;
 }
 
-.mobile-menu-btn {
-    display: none;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
-}
-
-.mobile-menu-btn span {
-    display: block;
-    width: 28px;
-    height: 2px;
-    background-color: var(--white);
-    transition: all 0.3s ease;
-}
-
-#header.scrolled .mobile-menu-btn span {
-    background-color: var(--text-color);
-}
-
-.mobile-menu-btn.active span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.mobile-menu-btn.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.mobile-menu-btn.active span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-/* Parent dropdown list item */
+/* Dropdown styling */
 li.dropdown {
-  position: relative;
+    position: relative;
 }
 
-/* Hide dropdown menu initially */
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  min-width: 160px;
-  z-index: 1000;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Center dropdown */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 160px;
+    z-index: 1000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: var(--white); /* Ensure dropdown has a background */
 }
 
-/* Show dropdown on hover */
 li.dropdown:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 
-/* Dropdown links */
 .dropdown-menu li a {
-  display: block;
-  padding: 10px 15px;
-  color: #fffbfb;
-  text-decoration: none;
-  transition: background-color 0.2s ease;
+    display: block;
+    padding: 10px 15px;
+    color: var(--text-color); /* Adjusted for better contrast */
+    text-decoration: none;
+    transition: background-color 0.2s ease;
 }
 
+.dropdown-menu li a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
 
 /* Buttons */
 .btn {
@@ -237,6 +223,89 @@ li.dropdown:hover .dropdown-menu {
 .btn-small {
     padding: 8px 16px;
     font-size: 14px;
+}
+
+/* Mobile menu button */
+.mobile-menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.mobile-menu-btn span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    background-color: var(--white);
+    transition: all 0.3s ease;
+}
+
+#header.scrolled .mobile-menu-btn span {
+    background-color: var(--text-color);
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-wrapper {
+        display: none; /* Hide nav on mobile */
+    }
+
+    .mobile-menu-btn {
+        display: flex; /* Show mobile menu button */
+    }
+
+    /* Mobile menu when active */
+    .nav-wrapper.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        padding: 20px;
+        box-shadow: var(--shadow);
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .nav-links a {
+        color: var(--text-color);
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .dropdown-menu {
+        position: static;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+    }
+}
+
+/* Transition for all elements */
+#header, #header .container, .logo a, .nav-links a, .btn {
+    transition: all 0.3s ease;
 }
 
 /* Hero Section */
