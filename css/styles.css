@@ -44,6 +44,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
+    
 }
 
 /* Header */
@@ -55,7 +56,7 @@
     z-index: 1000;
     background-color: transparent;
     transition: all 0.3s ease;
-    padding: 24px 0;
+    padding: 15px 0;
 }
 
 #header.scrolled {
@@ -68,7 +69,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+   
 }
+
 
 .logo a {
     font-size: 24px;
@@ -80,6 +85,10 @@
 
 #header.scrolled .logo a {
     color: var(--primary-color);
+}
+
+#header, #header .container, .logo a, .nav-links a {
+    transition: all 0.3s ease;
 }
 
 .logo span {
