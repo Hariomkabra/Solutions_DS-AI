@@ -1094,105 +1094,125 @@ li.dropdown:hover .dropdown-menu {
 /*AI -Seevices*/
 /*point of View*/
 
-.container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
+ .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
 
-.section-title {
-    font-size: 14px;
-    color: #666;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    font-weight: normal;
-}
+        .section-title {
+            font-size: 14px;
+            color: #666;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
 
-h1 {
-    font-size: 36px;
- 
-    margin-bottom: 20px;
-    line-height: 1.2;
-}
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
 
-.intro {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
+        .intro {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
 
-.image-placeholder {
-    width: 100%;
-    height: 300px;
-    background-color: #e0e0e0;
-    margin-bottom: 40px;
-}
+        .content-image-wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
 
-.image-placeholder img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+        .text-content {
+            flex: 1;
+        }
 
-.columns {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-}
+        .image-placeholder {
+            flex: 0 0 50%;
+            height: 300px;
+        }
 
-.column {
-    flex: 1;
-}
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-.column h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 15px;
-}
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
 
-.column p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
+        .column {
+            flex: 1;
+        }
 
-.highlight {
-    font-size: 16px;
-    color: #333;
-    font-weight: bold;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
-}
+        .column h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+        }
 
-.bullet-points {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+        .column p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
 
-.bullet-points li {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 20px;
-}
+        .highlight {
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
-.bullet-points li:before {
-    content: "•";
-    color: #ff6347;
-    position: absolute;
-    left: 0;
-    font-size: 20px;
-}
+        .bullet-points {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.bullet-points li strong {
-    color: #333;
-}
+        .bullet-points li {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .bullet-points li:before {
+            content: "•";
+            color: #ff6347;
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+        }
+
+        .bullet-points li strong {
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .content-image-wrapper {
+                flex-direction: column;
+            }
+            .image-placeholder {
+                flex: 0 0 100%;
+            }
+            .columns {
+                flex-direction: column;
+            }
+        }
 /*End point of View*/
 
 /*HOW WE CAN HELP*/
