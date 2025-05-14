@@ -72,7 +72,7 @@
     align-items: center;
     max-width: 1200px; /* Added max-width for better control */
     margin: 0 auto; /* Center the container */
-    padding:  20px; /* Added padding for better spacing */
+    padding:  10px; /* Added padding for better spacing */
 }
 
 /* Logo styling */
@@ -1215,6 +1215,58 @@ li.dropdown:hover .dropdown-menu {
         }
 /*End point of View*/
 
+/*Our 4 pillars*/
+.four-pillars-section {
+ 
+    font-family: 'calluna', sans-serif;
+    color: #666;
+    padding: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.four-pillars-section h1 {
+    font-size: 24px;
+   color: #333;
+    margin-bottom: 30px;
+}
+
+.four-pillars-section .pillars-box {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #f2f2f7, #efeaed);
+    padding: 40px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.four-pillars-section .pillars-left {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.four-pillars-section .pillars-left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.four-pillars-section .pillars-left p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.four-pillars-section .pillars-right {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/*EndOur 4 pillars*/
+
+
 /*HOW WE CAN HELP*/
 
 h1 {
@@ -1331,6 +1383,7 @@ h1 {
 
 
 /*End HOW WE CAN HELP*/
+
 
 
 /* Footer */
