@@ -1094,7 +1094,7 @@ li.dropdown:hover .dropdown-menu {
 /*AI -Seevices*/
 /*point of View*/
 
- .container {
+        .container {
             max-width: 1200px;
             margin: 40px auto;
             padding: 0 20px;
@@ -1118,7 +1118,7 @@ li.dropdown:hover .dropdown-menu {
             font-size: 16px;
             color: #666;
             line-height: 1.6;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .content-image-wrapper {
@@ -1138,8 +1138,8 @@ li.dropdown:hover .dropdown-menu {
         }
 
         .image-placeholder img {
-            width: 100%;
-            height: 100%;
+            width:600px ;
+            height: 350px;
             object-fit: cover;
         }
 
