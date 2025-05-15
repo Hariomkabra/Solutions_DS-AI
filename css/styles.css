@@ -544,7 +544,7 @@ li.dropdown:hover .dropdown-menu {
 /* About Detail Section */
 /* Mission and Values Section */
 #mission-values {
-    padding: 100px 0;
+    padding: 25px 0;
     background-color: var(--light-bg);
 }
 
@@ -574,14 +574,14 @@ li.dropdown:hover .dropdown-menu {
     width: 80px;
     height: 3px;
     background-color: var(--primary-color);
-    border-radius: 3px;
+    border-radius: 6px;
 }
 
 .mission-content p {
     color: var(--text-light);
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .values-content h3 {
@@ -638,7 +638,7 @@ li.dropdown:hover .dropdown-menu {
 
 /* Our Story //*journey */
 #our-story {
-    padding: 100px 0;
+    padding: 20px 0;
     background-color: var(--light-bg);
 }
 
