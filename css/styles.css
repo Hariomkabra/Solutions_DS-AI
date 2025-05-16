@@ -1841,7 +1841,7 @@ h1 {
 
 .page-hero p {
     font-size: 18px;
-    max-width: 600px;
+    max-width:7000px;
     margin: 0; /* Removed margin: 0 auto to prevent centering */
     margin-left: 0; /* Ensures left alignment */
     letter-spacing: 2px;
