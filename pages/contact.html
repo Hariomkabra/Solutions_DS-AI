@@ -51,59 +51,100 @@
         </div>
     </section>
 
-    <section id="contact-detail">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Our Location</h3>
-                            <p>Change address to Perur, anantapur,<br> Andhra Pradesh, India-515621</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email Us</h3>
-                            <p> info@pranaalika.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h3>Call Us</h3>
-                            <p>+91 8886258662 </p>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--main content-->
+<section class="cu-section">
+    <div class="cu-container">
+      <div class="cu-header">
+        <p class="cu-subtitle">CONTACT US</p>
+        <h2 class="cu-title">Ready to achieve your vision?<br>We’re here to help.</h2>
+        <p class="cu-description">
+          We’d love to start a conversation. Fill out the form and we’ll connect you with the right person.
+        </p>
+      </div>
 
+      <form class="cu-form">
+        <div class="cu-row">
+          <div class="cu-field">
+            <label for="cu-first">First Name<span>*</span></label>
+            <input type="text" id="cu-first" placeholder="Enter first name" required>
+          </div>
+          <div class="cu-field">
+            <label for="cu-last">Last Name<span>*</span></label>
+            <input type="text" id="cu-last" placeholder="Enter last name" required>
+          </div>
+        </div>
+
+        <div class="cu-row">
+          <div class="cu-field">
+            <label for="cu-email">Email Address<span>*</span></label>
+            <input type="email" id="cu-email" placeholder="Please enter your work email address" required>
+          </div>
+          <div class="cu-field">
+            <label for="cu-phone">Phone</label>
+            <input type="tel" id="cu-phone" placeholder="Enter phone number">
+          </div>
+        </div>
+
+        <div class="cu-row">
+          <div class="cu-field">
+            <label for="cu-company">Company<span>*</span></label>
+            <input type="text" id="cu-company" placeholder="Enter company name" required>
+          </div>
+          <div class="cu-field">
+            <label for="cu-title">Title</label>
+            <input type="text" id="cu-title" placeholder="Enter job title">
+          </div>
+        </div>
+
+        <div class="cu-row">
+          <div class="cu-field cu-full">
+            <label for="cu-message">How can we help you?</label>
+            <textarea id="cu-message" rows="4" placeholder="Write your comments here"></textarea>
+          </div>
+        </div>
+
+        <div class="cu-row">
+          <div class="cu-field cu-full">
+            <label for="cu-location">Your Location</label>
+            <select id="cu-location">
+              <option value="" disabled selected>Please select</option>
+              <option>Hubli</option>
+              <option>Bengaluru</option>
+              <option>Chennai</option>
+              <option>Mumbai</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="cu-row">
+          <div class="cu-field cu-full">
+            <label for="cu-hear">How did you hear about us?</label>
+            <textarea id="cu-hear" rows="3" placeholder=""></textarea>
+          </div>
+        </div>
+
+        <div class="cu-disclaimer">
+          <p>
+            Credera is committed to protecting and respecting your privacy. From time to time, we would like to contact
+            you about our services, thought leadership, and events, as well as other content that may be of interest to you.
+            If you consent to us contacting you for this purpose, please tick below:
+          </p>
+          <label><input type="checkbox"> I agree to receive other communications from Credera.</label>
+        </div>
+
+        <div class="cu-footer-text">
+          <p>
+            You may unsubscribe from these communications at any time. For more information on how to unsubscribe,
+            our privacy practices, and how we are committed to protecting and respecting your privacy, please review
+            our Privacy Policy. By clicking submit, you consent to allow Credera to store and process the personal
+            information submitted above to provide you the content requested.
+          </p>
+        </div>
+
+        <button type="submit" class="cu-submit">SUBMIT</button>
+      </form>
+    </div>
+  </section>
     <!--footer-->
 <footer class="footer">
     <div class="footer-container">
