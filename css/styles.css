@@ -664,7 +664,7 @@ li.dropdown:hover .dropdown-menu {
 /* data-features-section*/
 
 .data-features-section {
-    padding: 60px 20px; /* Vertical and horizontal padding */
+    padding: 60px 40px; /* Vertical and horizontal padding */
     background-color: #fff;
 }
 
@@ -680,7 +680,7 @@ li.dropdown:hover .dropdown-menu {
     display: flex;
     align-items: center;
     gap: 30px; /* Space between image and content */
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     background-color: #fff;
     transition: box-shadow 0.3s ease; /* Smooth hover effect */
@@ -691,7 +691,7 @@ li.dropdown:hover .dropdown-menu {
 }
 
 .data-feature-image {
-    flex: 0 0 200px; /* Fixed width for the image area */
+    flex: 0 0 350px; /* Fixed width for the image area */
 }
 
 .data-feature-image img {
