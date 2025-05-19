@@ -81,7 +81,70 @@
 
     <!--End hero-->
  
+<!--Our Managed Services-->
 
+
+     <div class="ms-container">
+        <h1 class="ms-heading">Build a Stronger Core With Our Managed Services</h1>
+        <p class="ms-description">Our managed services ensure that our clients manage, maintain, support, and optimize their IT applications. We help keep the IT infrastructure safe, stable, and relevant.</p>
+
+        <div class="ms-image-grid">
+            <img src="https://images.stockcake.com/public/8/e/5/8e5c5ad4-2bea-4774-b89b-667fb6fac740_large/corporate-team-meeting-stockcake.jpg" alt="Team Meeting">
+            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2022-03/20/full/1647798220-9844.jpg" alt="Network Diagram">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/053/963/924/small_2x/a-stylized-interconnected-globe-depicting-the-americas-with-vibrant-blue-lines-representing-networks-and-digital-connections-png.png" alt="Digital Globe">
+            <img src="https://icsblog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2023/04/29163136/4-Pillars-of-Cloud-Computing-1.jpg" alt="Cloud Computing">
+        </div>
+
+        <div class="ms-carousel-container">
+            <div class="ms-carousel" id="msCarousel">
+                <div class="ms-carousel-item">
+                    <h3>Artificial intelligence</h3>
+                    <p>Solve complex problems, make informed decisions, and increase your business efficiency with artificial intelligence (AI).</p>
+                </div>
+                <div class="ms-carousel-item">
+                    <h3>Cloud & engineering</h3>
+                    <p>The world’s most innovative toolkit to create business value.</p>
+                </div>
+                <div class="ms-carousel-item">
+                    <h3>Data analytics</h3>
+                    <p>Data analysis provides the foundation for informed decision-making, innovation, problem-solving, and efficiency.</p>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+    <script>
+        const msCarousel = document.getElementById('msCarousel');
+        const msItems = document.querySelectorAll('.ms-carousel-item');
+        let msCurrentIndex = 0;
+
+        function msShowSlide(index) {
+            if (index >= msItems.length) {
+                msCurrentIndex = 0;
+            } else if (index < 0) {
+                msCurrentIndex = msItems.length - 1;
+            } else {
+                msCurrentIndex = index;
+            }
+            msCarousel.style.transform = `translateX(-${msCurrentIndex * 100}%)`;
+        }
+
+        function msNextSlide() {
+            msShowSlide(msCurrentIndex + 1);
+        }
+
+        function msPrevSlide() {
+            msShowSlide(msCurrentIndex - 1);
+        }
+
+        // Auto-slide every 3 seconds
+        setInterval(() => {
+            msNextSlide();
+        }, 3000);
+    </script>
+
+    <!--End Our Managed Services-->
 
     <!--WHO WE ARE-->
 
@@ -155,6 +218,10 @@
             </div>
         </div>
     </div>
+
+
+
+    
 
     <!--End company-stats-container-->
     <div class="Pranaalika-mission-container">

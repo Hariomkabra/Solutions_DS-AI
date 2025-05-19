@@ -584,6 +584,89 @@ li.dropdown:hover .dropdown-menu {
 
 /*End service card*/
 
+ /*Our Managed Services*/
+
+ .ms-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .ms-heading {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .ms-description {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .ms-image-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .ms-image-grid img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ms-carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .ms-carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .ms-carousel-item {
+            min-width: 100%;
+            background-color: #e8ecef;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .ms-carousel-item h3 {
+            font-size: 1.5em;
+            color: #2f2d2d;
+            margin-bottom: 10px;
+        }
+
+        .ms-carousel-item p {
+            font-size: 1em;
+            color: #484444;
+        }
+
+        .ms-carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+       
+
+        /*End Our Managed Services*/
+
 /*how we can help*/
 
 .help-content {
