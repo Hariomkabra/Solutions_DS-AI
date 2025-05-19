@@ -669,7 +669,7 @@ li.dropdown:hover .dropdown-menu {
 }
 
 .data-features-container {
-    max-width: 800px; /* Constrain width for a single-column layout */
+    max-width: 1200px; /* Constrain width for a single-column layout */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
