@@ -463,7 +463,7 @@ li.dropdown:hover .dropdown-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    padding: 40px;
+    padding: 60px;
     max-width: 1200px;
     margin: 0 auto;
     background-color: #f9f4f1; /* Slightly darker background for the grid area */
