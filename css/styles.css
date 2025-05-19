@@ -457,67 +457,389 @@ li.dropdown:hover .dropdown-menu {
 }
 
 /* Services Section */
-#services {
-        background-color: var(--white);
-    display: flex; /* Make the section a flex container */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    min-height: 100vh; /* Ensure enough height for vertical centering */
-}
+/*service card*/
 
-.services-grid {
-    padding: 80px;
+.uniq-grid-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-    max-width: 1200px; /* Constrain the grid width */
-    margin: 0 auto; /* Center the grid horizontally */
-    width: 100%; /* Ensure the grid takes full available width up to max-width */
+    gap: 25px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f9f4f1; /* Slightly darker background for the grid area */
+    border-radius: 12px; /* Rounded corners for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
 }
 
-.service-card {
-    background-color: var(--light-bg);
-    padding: 32px;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    transition: all 0.3s ease;
-    text-align: center;
+.uniq-card-item {
+    background-color: #fff;
+    padding: 25px; /* Slightly more padding for breathing room */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transitions */
+    position: relative;
+    overflow: hidden; /* For any potential overflow effects */
 }
 
-.service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+.uniq-card-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
 }
 
-.service-icon {
-    width: 80px;
-    height: 80px;
-    background-color: var(--primary-light);
-    border-radius: 50%;
+.uniq-card-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #007bff, #00c4b4); /* Gradient top border */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.uniq-card-item:hover::before {
+    opacity: 1; /* Show gradient border on hover */
+}
+
+.uniq-card-item h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2b2b2b; /* Slightly darker for better contrast */
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.uniq-card-item:hover h2 {
+    color: #007bff; /* Change heading color on hover */
+}
+
+.uniq-card-item p {
+    font-size: 0.95rem; /* Slightly smaller for better hierarchy */
+    color: #666; /* Softer gray for better readability */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.uniq-card-item:hover p {
+    color: #444; /* Darken paragraph text slightly on hover */
+}
+
+.uniq-explore-btn {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Space between text and arrow */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.uniq-explore-btn::after {
+    content: '→';
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.uniq-explore-btn:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: none; /* Remove underline to emphasize custom effect */
+    transform: translateX(5px); /* Slight shift to the right on hover */
+}
+
+.uniq-explore-btn:hover::after {
+    transform: translateX(3px); /* Arrow moves further right on hover */
+}
+
+@media (max-width: 768px) {
+    .uniq-grid-wrapper {
+        grid-template-columns: 1fr;
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .uniq-card-item {
+        height: auto;
+    }
+
+    .uniq-card-item:hover {
+        transform: translateY(-3px); /* Slightly smaller lift on mobile */
+    }
+}
+
+/* Improve accessibility for focus states */
+.uniq-explore-btn:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+    border-radius: 3px;
+}
+
+
+
+/*End service card*/
+
+/*how we can help*/
+
+.help-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0 auto 24px;
+    justify-content: space-between;
+    max-width: 1200px;
+    padding: 60px;
+    margin: 0 auto;
+    gap: 40px; /* Space between text and image */
 }
 
-.service-icon i {
-    font-size: 32px;
-    color: var(--white);
+.help-text {
+    flex: 1; /* Take up available space */
+    max-width: 50%;
 }
 
-.service-card h3 {
-    font-size: 20px;
-    margin-bottom: 16px;
-    color: var(--text-color);
+.help-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666; /* Gray color for subtitle */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
-.service-card p {
-    color: var(--text-light);
-    font-size: 15px;
+.help-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2b2b2b; /* Dark color for contrast */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.help-description {
+    font-size: 1rem;
+    color: #555;
     line-height: 1.6;
 }
 
+.help-image {
+    flex: 1; /* Take up available space */
+    max-width: 50%;
+    text-align: center;
+}
+
+.help-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional: rounded corners for the image */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .help-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .help-text,
+    .help-image {
+        max-width: 100%;
+    }
+
+    .help-title {
+        font-size: 2rem;
+    }
+
+    .help-description {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+/*End how we can help*/
+
+/* data-features-section*/
+
+.data-features-section {
+    padding: 60px 20px; /* Vertical and horizontal padding */
+    background-color: #fff;
+}
+
+.data-features-container {
+    max-width: 800px; /* Constrain width for a single-column layout */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between cards */
+}
+
+.data-feature-card {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between image and content */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.data-feature-card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.data-feature-image {
+    flex: 0 0 200px; /* Fixed width for the image area */
+}
+
+.data-feature-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data-feature-content {
+    flex: 1; /* Take up remaining space */
+}
+
+.data-feature-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2b2b2b; /* Dark color for contrast */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.data-feature-description {
+    font-size: 1rem;
+    color: #555; /* Gray color for description */
+    line-height: 1.6;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .data-feature-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .data-feature-image {
+        flex: none;
+        margin-bottom: 20px;
+    }
+
+    .data-feature-title {
+        font-size: 1.3rem;
+    }
+
+    .data-feature-description {
+        font-size: 0.95rem;
+    }
+}
+
+
+/*End data-features-section*/
+
+  /*thought-leadership-section*/
+
+.thought-leadership-section {
+    padding: 60px 20px; /* Vertical and horizontal padding */
+    background-color: #f0efef;
+}
+
+.thought-leadership-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto; /* Center and add bottom margin */
+}
+
+.thought-leadership-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666; /* Gray color for subtitle */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.thought-leadership-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2b2b2b; /* Dark color for contrast */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.thought-leadership-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.thought-leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between cards */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.thought-leadership-card {
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px;
+    overflow: hidden; /* Ensure image doesn't overflow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.thought-leadership-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+}
+
+.thought-leadership-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+}
+
+.thought-leadership-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2b2b2b;
+    padding: 20px 20px 10px 20px; /* Padding for title */
+}
+
+.thought-leadership-card-description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    padding: 0 20px 20px 20px; /* Padding for description */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .thought-leadership-grid {
+        grid-template-columns: 1fr; /* Stack cards on small screens */
+    }
+
+    .thought-leadership-title {
+        font-size: 2rem;
+    }
+
+    .thought-leadership-description {
+        font-size: 0.95rem;
+    }
+
+    .thought-leadership-card img {
+        height: 250px; /* Slightly taller images on mobile */
+    }
+}
+
+  /*End thought-leadership-section*/
 /*WHO WE ARE*/
 * {
     margin: 0;
