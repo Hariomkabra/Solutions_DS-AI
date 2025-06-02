@@ -1,17 +1,16 @@
-# DS AI Solutions Website
+## Pranaalika Solutions
+Pranaalika Solutions is a digital transformation company specializing in Artificial Intelligence, Data Analytics, and Cloud Engineering services. Our mission is to help organizations leverage the power of AI and data science to drive innovation, efficiency, and growth.
 
-A modern, responsive website for DS AI Solutions, showcasing AI and data science services. Built with pure HTML, CSS, and JavaScript.
+## Services
+Artificial Intelligence: Solve complex problems, make informed decisions, and increase business efficiency with AI.
 
-## Features
+Data Analytics: Transform data into actionable insights for better decision-making and innovation.
 
-- Responsive design for all device sizes
-- Interactive animations and transitions
-- Multi-page structure with detailed content
-- Contact form with validation
-- Newsletter subscription
-- Mobile-friendly navigation
-- Image gallery and portfolio showcase
-- Testimonials slider
+Cloud & Engineering: Utilize the world’s most innovative toolkit to create business value.
+
+##  Website
+Explore our services and learn more about how we can assist your business at:https://pranaalika.netlify.app/
+
 
 ## Project Structure
 
@@ -37,37 +36,3 @@ A modern, responsive website for DS AI Solutions, showcasing AI and data science
 └── images/               # Website images
 ```
 
-## Setup Instructions
-
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/ds-ai-solutions.git
-```
-
-2. Navigate to the project directory
-```bash
-cd ds-ai-solutions
-```
-
-3. Install dependencies
-```bash
-npm install
-```
-
-4. Start the development server
-```bash
-npm run dev
-```
-
-## Deployment
-
-1. Build the project
-```bash
-npm run build
-```
-
-2. Deploy to GitHub Pages or your preferred hosting service
-
-## License
-
-MIT
