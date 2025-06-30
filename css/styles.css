@@ -1724,8 +1724,8 @@ h1 {
 }
 
 .image-placeholder img {
-    width: 600px;
-    height: 350px;
+    width: 520px;
+    height: 300px;
     object-fit: cover;
 }
 
