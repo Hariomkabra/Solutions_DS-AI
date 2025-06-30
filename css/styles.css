@@ -1696,8 +1696,9 @@ h1 {
     font-size: 36px;
     margin-bottom: 20px;
     line-height: 1.2;
-    color: #fff; /* Deep Blue for headings */
+    color: #ffffff; /* Deep Blue for headings */
 }
+
 
 .intro {
     font-size: 16px;
