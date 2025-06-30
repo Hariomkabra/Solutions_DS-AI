@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - DS AI Solutions</title>
+    <title>Data Analytics - Pranaalika Solutions</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/responsive.css">
@@ -11,172 +11,481 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-     <header id="header">
-    <div class="container">
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../images/pranaalika-primary.svg" alt="Pranaalika Solutions Logo" class="logo-image">
-            </a>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../images/pranaalika-primary.svg" alt="Pranaalika Solutions Logo" class="logo-image">
+                </a>
+            </div>
+            <div class="nav-wrapper">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="../index.html">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="services.html">SERVICES</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="AI-Services.html">AI SERVICES</a></li>
+                                <li><a href="Data-service.html">DATA ANALYTICS</a></li>
+                                <li><a href="Cloud & engineering.html">CLOUD & ENGG</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="projects.html">PROJECTS</a></li>
+                        <li><a href="case-studies.html">STUDIES</a></li>
+                        <li><a href="carrer.html">CAREERS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="nav-wrapper">
-            <nav>
-                 <ul class="nav-links">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li class="dropdown">
-                        <a href="services.html">SERVICES</a>
-                        <ul class="dropdown-menu">
-                          
-                            <li><a href="AI-Services.html">AI SERVICES</a></li>
-                            <li><a href="Data-service.html">DATA ANALYTICS</a></li>
-                            <li><a href="Cloud & engineering.html">CLOUD & ENGG</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="projects.html" >PROJECTS</a></li>
-                    <li><a href="case-studies.html">STUDIES</a></li>
-                    <li><a href="carrer.html" >CAREERS</a></li>
-                    <li><a href="contact.html" >CONTACT</a></li>
+    </header>
 
-                </ul>
-            </nav>
-        </div>
-        <div class="mobile-menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-</header>
-  <main class="data-service-content">
+    <main class="data-service-content">
         <section class="page-hero">
             <div class="container">
-                <h1>Data analytics</h1>
+                <h1>Data Analytics</h1>
                 <p>Data analysis provides the foundation for informed decision-making, innovation, problem-solving, and efficiency.</p>
             </div>
         </section>
 
-        
-<style>
-        /* Scoped styles for main content */
+        <style>
+            /* Scoped styles for main content */
+            main.data-service-content .container {
+                max-width: 1200px;
+                margin: 40px auto;
+                padding: 0 20px;
+            }
 
-       
-        main.data-service-content .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+            main.data-service-content .section-title {
+                font-size: 14px;
+                color: var(--text-light);
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+                font-weight: normal;
+                text-transform: uppercase;
+                padding-top: 25px;
+            }
 
-        main.data-service-content .section-title {
-            font-size: 14px;
-            color: #666;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-            font-weight: normal;
-        }
+            main.data-service-content h1{
+                font-size: 36px;
+                margin-bottom: 20px;
+                line-height: 1.2;
+                color: #fff;
+                position: relative;
+            }
+            main.data-service-content h2 {
+                font-size: 28px;
+                margin-bottom: 20px;
+                color: #1e1c1c;
+                position: relative;
+            }
 
-        main.data-service-content h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
+            main.data-service-content h1::after,
+            main.data-service-content h2::after {
+                content: '';
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                width: 80px;
+                height: 3px;
+                background: linear-gradient(to right, var(--gold-start), var(--gold-middle), var(--gold-end));
+                border-radius: 3px;
+            }
 
-        main.data-service-content .intro {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 40px;
-        }
+            main.data-service-content .intro {
+                font-size: 16px;
+                color: var(--text-light);
+                line-height: 1.6;
+                margin-bottom: 40px;
+            }
 
-        main.data-service-content .cards {
-            display: flex;
-            gap: 20px;
-        }
+            main.data-service-content .cards {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
 
-        main.data-service-content .card {
-            flex: 1;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+            main.data-service-content .card {
+                flex: 1;
+                background-color: var(--white);
+                padding: 20px;
+                border-radius: var(--border-radius);
+                box-shadow: var(--shadow);
+                position: relative;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                min-width: 250px;
+            }
 
-        main.data-service-content .icon-placeholder {
-            width: 50px;
-            height: 50px;
-            background-color: #e0e0e0;
-            margin-bottom: 20px;
-        }
+            main.data-service-content .card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background: linear-gradient(to right, var(--gold-start), var(--gold-middle), var(--gold-end));
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
 
-        main.data-service-content .icon-strategy {
-            background-color: #ff6347;
-        }
+            main.data-service-content .card:hover {
+                transform: translateY(-5px);
+                box-shadow: var(--shadow-md);
+            }
 
-        main.data-service-content .icon-products {
-            background-color: #d3d3d3;
-        }
+            main.data-service-content .card:hover::before {
+                opacity: 1;
+            }
 
-        main.data-service-content .icon-models {
-            background-color: #ff6347;
-        }
+            main.data-service-content .icon-placeholder {
+                width: 50px;
+                height: 50px;
+                margin-bottom: 20px;
+                border-radius: 8px;
+                background: linear-gradient(to right, var(--blue-start), var(--blue-end));
+            }
 
-        main.data-service-content .card h3 {
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 15px;
-        }
+            main.data-service-content .icon-strategy {
+                background: linear-gradient(to right, var(--blue-start), var(--blue-end));
+            }
 
-        main.data-service-content .card p {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+            main.data-service-content .icon-products {
+                background: linear-gradient(to right, var(--blue-start), var(--blue-end));
+            }
 
-        main.data-service-content .explore-link {
-            font-size: 14px;
-            color: #1e90ff;
-            text-decoration: none;
-            font-weight: bold;
-            letter-spacing: 1px;
-        }
+            main.data-service-content .icon-models {
+                background: linear-gradient(to right, var(--blue-start), var(--blue-end));
+            }
 
-        main.data-service-content .explore-link:hover {
-            text-decoration: underline;
-        }
+            main.data-service-content .card h3 {
+                font-size: 20px;
+                color: var(--text-color);
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
 
-        main.data-service-content .partners-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 40px;
-            align-items: center;
-            justify-items: center;
-        }
+            main.data-service-content .card:hover h3 {
+                color: var(--blue-start);
+            }
 
-        main.data-service-content .partner-logo img,
-        main.data-service-content .partner-logoo img {
-            max-width: 120px;
-            height: auto;
-        }
+            main.data-service-content .card p {
+                font-size: 16px;
+                color: var(--text-light);
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
 
-        main.data-service-content .partner-logo:nth-child(1) img,
-        main.data-service-content .partner-logo:nth-child(2) img,
-        main.data-service-content .partner-logo:nth-child(4) img,
-        main.data-service-content .partner-logo:nth-child(5) img,
-        main.data-service-content .partner-logoo:nth-child(10) img,
-        main.data-service-content .partner-logo:nth-child(11) img {
-            max-width: 160px;
-        }
+            main.data-service-content .explore-link {
+                font-size: 14px;
+                color: var(--blue-start);
+                text-decoration: none;
+                font-weight: bold;
+                letter-spacing: 1px;
+                display: inline-flex;
+                align-items: center;
+                gap: 5px;
+                transition: color 0.3s ease, transform 0.3s ease;
+            }
 
-    </style>
+            main.data-service-content .explore-link::after {
+                content: '→';
+                font-size: 16px;
+            }
 
+            main.data-service-content .explore-link:hover {
+                color: var(--gold-start);
+                transform: translateX(5px);
+            }
 
+            main.data-service-content .explore-link:hover::after {
+                transform: translateX(3px);
+            }
 
- <!-- Point of View -->
+            main.data-service-content .partners-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 40px;
+                align-items: center;
+                justify-items: center;
+                margin-top: 40px;
+            }
+
+            main.data-service-content .partner-logo img,
+            main.data-service-content .partner-logoo img {
+                max-width: 120px;
+                height: auto;
+                filter: grayscale(100%);
+                transition: filter 0.3s ease;
+            }
+
+            main.data-service-content .partner-logo:hover img,
+            main.data-service-content .partner-logoo:hover img {
+                filter: none;
+            }
+
+            main.data-service-content .partner-logo:nth-child(1) img,
+            main.data-service-content .partner-logo:nth-child(2) img,
+            main.data-service-content .partner-logo:nth-child(4) img,
+            main.data-service-content .partner-logo:nth-child(5) img,
+            main.data-service-content .partner-logoo:nth-child(5) img {
+                max-width: 160px;
+            }
+
+            main.data-service-content .content-image-wrapper {
+                display: flex;
+                justify-content: space-between;
+                gap: 40px;
+                margin-bottom: 40px;
+            }
+
+            main.data-service-content .text-content {
+                flex: 1;
+            }
+
+            main.data-service-content .image-placeholderr {
+                flex: 0 0 50%;
+            }
+
+            main.data-service-content .image-placeholderr img {
+                width: 100%;
+               
+                object-fit: cover;
+                border-radius: var(--border-radius);
+                border: 3px solid var(--gold-start);
+            }
+
+            main.data-service-content .columns {
+                display: flex;
+                justify-content: space-between;
+                gap: 40px;
+                margin-bottom: 40px;
+            }
+
+            main.data-service-content .column {
+                flex: 1;
+            }
+
+            main.data-service-content .column h3 {
+                font-size: 20px;
+                color: var(--blue-start);
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+
+            main.data-service-content .column h3::after {
+                content: '';
+                display: block;
+                width: 50px;
+                height: 2px;
+                background: linear-gradient(to right, var(--gold-start), var(--gold-middle), var(--gold-end));
+                margin-top: 8px;
+            }
+
+            main.data-service-content .column p {
+                font-size: 16px;
+                color: var(--text-light);
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+
+            main.data-service-content .highlight {
+                font-size: 16px;
+                color: var(--text-color);
+                font-weight: bold;
+                background-color: var(--gray-100);
+                padding: 10px;
+                border-radius: var(--border-radius);
+                border-left: 4px solid var(--blue-start);
+            }
+
+            main.data-service-content .bullet-points {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            main.data-service-content .bullet-points li {
+                font-size: 16px;
+                color: var(--text-light);
+                line-height: 1.6;
+                margin-bottom: 10px;
+                position: relative;
+                padding-left: 20px;
+            }
+
+            main.data-service-content .bullet-points li::before {
+                content: '•';
+                color: var(--gold-start);
+                position: absolute;
+                left: 0;
+                font-size: 20px;
+            }
+
+            main.data-service-content .bullet-points li strong {
+                color: var(--text-color);
+            }
+
+            main.data-service-content .content {
+                display: flex;
+                gap: 40px;
+                margin-bottom: 40px;
+            }
+
+            main.data-service-content .main-text {
+                flex: 2;
+            }
+
+            main.data-service-content .main-text p {
+                font-size: 16px;
+                color: var(--text-light);
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            main.data-service-content .quote-section {
+                flex: 1;
+                background-color: var(--gray-100);
+                padding: 20px;
+                border-radius: var(--border-radius);
+                position: relative;
+                border-left: 4px solid var(--blue-start);
+            }
+
+            main.data-service-content .quote-section::before {
+                content: '“';
+                font-size: 40px;
+                color: var(--blue-start);
+                position: absolute;
+                top: 10px;
+                left: 20px;
+            }
+
+            main.data-service-content .quote-section blockquote {
+                font-size: 16px;
+                color: var(--text-color);
+                line-height: 1.6;
+                margin: 20px 0 0 0;
+                padding: 0;
+            }
+
+            main.data-service-content .signature {
+                font-size: 14px;
+                color: var(--text-color);
+                line-height: 1.4;
+                margin-top: 20px;
+                text-align: right;
+            }
+
+            main.data-service-content .badge {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: var(--white);
+                box-shadow: var(--shadow);
+                transition: transform 0.3s ease, background-color 0.3s ease;
+                cursor: pointer;
+            }
+
+            main.data-service-content .badge img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            main.data-service-content .badge:hover {
+                transform: scale(1.1);
+                background: linear-gradient(to right, var(--gold-start), var(--gold-middle), var(--gold-end));
+            }
+
+            main.data-service-content .pillars-box {
+                display: flex;
+                justify-content: space-between;
+                background: linear-gradient(to right, var(--gray-100), var(--gray-200));
+                padding: 40px;
+                border-radius: var(--border-radius);
+                max-width: 1000px;
+                margin: 40px auto;
+                text-align: left;
+                box-shadow: var(--shadow);
+            }
+
+            main.data-service-content .pillars-left {
+                flex: 1;
+                padding-right: 40px;
+            }
+
+            main.data-service-content .pillars-left p {
+                font-size: 18px;
+                color: var(--text-light);
+                margin-bottom: 20px;
+            }
+
+            main.data-service-content .pillars-left p:first-child {
+                font-weight: bold;
+                font-size: 20px;
+                color: var(--text-color);
+            }
+
+            main.data-service-content .pillars-right {
+                flex: 1;
+                font-size: 16px;
+                color: var(--text-light);
+                line-height: 1.6;
+            }
+
+            @media (max-width: 768px) {
+                main.data-service-content .cards {
+                    flex-direction: column;
+                }
+
+                main.data-service-content .content-image-wrapper {
+                    flex-direction: column;
+                }
+
+                main.data-service-content .image-placeholderr {
+                    flex: 0 0 100%;
+                }
+
+                main.data-service-content .columns {
+                    flex-direction: column;
+                }
+
+                main.data-service-content .content {
+                    flex-direction: column;
+                }
+
+                main.data-service-content .pillars-box {
+                    flex-direction: column;
+                    padding: 20px;
+                }
+
+                main.data-service-content .pillars-left {
+                    padding-right: 0;
+                }
+
+                main.data-service-content .partners-grid {
+                    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                    gap: 20px;
+                }
+            }
+        </style>
+
+        <!-- Point of View -->
         <div class="container">
             <div class="content-image-wrapper">
                 <div class="text-content">
                     <h4 class="section-title">WHY IT MATTERS</h4>
-                    <h2>Turn data into insights.</h2>
+                    <h1>Turn Data into Insights</h1>
                     <p class="intro">
                         We think every data point is unique and has a story. As a leader in data analytics, we help clients unlock the full value of their data with smart strategy and advanced technology.
                     </p>
@@ -184,8 +493,8 @@
                         Our expert team helps extract maximum value from data and turn it into valuable insights to promote business development and creativity. Whether you’re looking to improve operational efficiencies, provide better service to customers, or find new revenue streams, we offer the expertise and tools to get you there.
                     </p>
                 </div>
-                <div class="image-placeholder">
-                    <img src="https://www.score.org/sites/default/files/styles/responsive_16_9_750w/public/2024-06/FinancialAudit.jpg?itok=WwB-aEqdg" alt="Team working on Data-service">
+                <div class="image-placeholderr">
+                    <img src="https://www.score.org/sites/default/files/styles/responsive_16_9_750w/public/2024-06/FinancialAudit.jpg?itok=WwB-aEqdg" alt="Team working on Data Analytics">
                 </div>
             </div>
             <div class="columns">
@@ -196,7 +505,7 @@
                     </p>
                 </div>
                 <div class="column">
-                    <h3>Regulations and compliance</h3>
+                    <h3>Regulations and Compliance</h3>
                     <p>
                         Many industries are subject to stringent regulations and standards. Data analysis can help ensure compliance by monitoring and reporting various metrics, making non-compliance patterns easier to spot, manage, and report.
                     </p>
@@ -205,41 +514,42 @@
                     </p>
                 </div>
                 <div class="column">
-                    <h3>Customer insights</h3>
-                    <p>
+                    <h3>Customer Insights</h_UI> {
                         Data analysis provides insights into customer behavior, preferences, and needs. This information is invaluable for tailoring products, services, and marketing efforts to target audiences effectively. It can help with:
                     </p>
                     <ul class="bullet-points">
                         <li><strong>Predictions:</strong> Enhance the customer experience by offering similar products, predicting ‘next best steps’ for a customer, or predicting internal needs such as automated inventory re-stocking.</li>
-                        <li><strong>Future trends:</strong> Your data analysis can provide insights, such as emerging patterns, market trends, or customer preferences you may not have noticed otherwise.</li>
+                        <li><strong>Future Trends:</strong> Your data analysis can provide insights, such as emerging patterns, market trends, or customer preferences you may not have noticed otherwise.</li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- End Point of View -->
 
-         <!-- Journey -->
+        <!-- Journey -->
         <div class="container">
             <h4 class="section-title">PROCESSES</h4>
-            <h2>The journey to enterprise analytics</h2>
+            <h2>The Journey to Enterprise Analytics</h2>
             <p class="intro">
                 Our aim is to help organizations move toward high-value enterprise analytics, no matter where they are in their journey.
             </p>
-            <img src="https://www.luxoft.com/files/blog-posts/how-do-you-make-better-decisions/graph-02.png" alt="">
+            <div class="image-placeholderr">
+                <img src="https://www.luxoft.com/files/blog-posts/how-do-you-make-better-decisions/graph-02.png" alt="Enterprise Analytics Journey">
+            </div>
         </div>
         <!-- End Journey -->
 
         <!-- How We Can Help -->
         <div class="container">
             <h4 class="section-title">HOW WE CAN HELP</h4>
-            <h2>Experience the difference.</h2>
+            <h2>Experience the Difference</h2>
             <div class="content">
                 <div class="main-text">
                     <p>
-                        One of our core values is integrity, which means we will challenge the status quo, train your teams, and ensure you are truly benefiting from your data. Watch some of our client testimonials to see what it’s like to work with us in our  Pranaalika Solutions Difference series.
+                        One of our core values is integrity, which means we will challenge the status quo, train your teams, and ensure you are truly benefiting from your data. Watch some of our client testimonials to see what it’s like to work with us in our Pranaalika Solutions Difference series.
                     </p>
                     <p>
-                         Pranaalika Solutions works with clients to identify their specific needs and goes beyond high level dashboards to let users dig in and uncover the ‘why’ behind the ’what.' We work together to implement an architecture and culture that brings together data and people in a meaningful way. This includes an evaluation of the people, processes, and tools needed to successfully unlock value from their data.
+                        Pranaalika Solutions works with clients to identify their specific needs and goes beyond high-level dashboards to let users dig in and uncover the ‘why’ behind the ’what.’ We work together to implement an architecture and culture that brings together data and people in a meaningful way. This includes an evaluation of the people, processes, and tools needed to successfully unlock value from their data.
                     </p>
                     <ul class="bullet-points">
                         <li>Explore how we fostered a data-driven culture for NRG.</li>
@@ -248,7 +558,7 @@
                 </div>
                 <div class="quote-section">
                     <blockquote>
-                        The  Pranaalika Solutions team’s technical expertise, deep understanding of our business, well-thought-out methodology, and focus on change management were all critical to this project’s success. We ultimately achieved amazing breakthroughs in our technical infrastructure and business outcomes thanks to the team’s tremendous accomplishments. They were just what we needed to overcome the considerable hurdles that we faced.
+                        The Pranaalika Solutions team’s technical expertise, deep understanding of our business, well-thought-out methodology, and focus on change management were all critical to this project’s success. We ultimately achieved amazing breakthroughs in our technical infrastructure and business outcomes thanks to the team’s tremendous accomplishments. They were just what we needed to overcome the considerable hurdles that we faced.
                     </blockquote>
                     <p class="signature">
                         Senior Director,<br> Data Governance and Engineering<br>
@@ -265,31 +575,34 @@
         <!-- Offerings -->
         <div class="container">
             <h4 class="section-title">OFFERINGS</h4>
-            <h2>Explore our data analytics offerings.</h2>
+            <h2>Explore Our Data Analytics Offerings</h2>
             <p class="intro">
                 Unblock the common challenges that hinder data-driven analysis and insights.
             </p>
             <div class="cards">
                 <div class="card">
-                    <h3>Data visualization</h3>
+                    <div class="icon-placeholder icon-strategy"></div>
+                    <h3>Data Visualization</h3>
                     <p>
-                        See patterns and trends that demand action in a way that's useful and relevant to your organization
+                        See patterns and trends that demand action in a way that's useful and relevant to your organization.
                     </p>
-                    <a href="#" class="explore-link">EXPLORE FURTHER →</a>
+                    <a href="#" class="explore-link">EXPLORE FURTHER</a>
                 </div>
                 <div class="card">
+                    <div class="icon-placeholder icon-products"></div>
                     <h3>Marketing Analytics Platform</h3>
                     <p>
-                        Consolidate customer, transactional, media, supply chain, and other relevant data into a single environment for marketing performance improvement through data science analysis, cleanroom integration, other data onboarding.
+                        Consolidate customer, transactional, media, supply chain, and other relevant data into a single environment for marketing performance improvement through data science analysis, cleanroom integration, and other data onboarding.
                     </p>
-                    <a href="#" class="explore-link">EXPLORE FURTHER →</a>
+                    <a href="#" class="explore-link">EXPLORE FURTHER</a>
                 </div>
                 <div class="card">
-                    <h3>Analytics engineering</h3>
+                    <div class="icon-placeholder icon-models"></div>
+                    <h3>Analytics Engineering</h3>
                     <p>
                         Ensure your data foundations are set up for you to succeed by working with our seasoned data engineers.
                     </p>
-                    <a href="#" class="explore-link">EXPLORE FURTHER →</a>
+                    <a href="#" class="explore-link">EXPLORE FURTHER</a>
                 </div>
             </div>
         </div>
@@ -297,13 +610,13 @@
 
         <!-- Our 4 Pillars -->
         <div class="container">
-            <h1>Data analytics solutions: Our 4 pillars</h1>
+            <h1>Data Analytics Solutions: Our 4 Pillars</h1>
             <div class="pillars-box">
                 <div class="pillars-left">
-                    <p><strong>Consolidation and curation</strong></p>
-                    <p>Democratization = data for all</p>
-                    <p>Data visualization and self-service for insights</p>
-                    <p>Advanced analytics for the whole enterprise</p Amortized cost analysis
+                    <p><strong>Consolidation and Curation</strong></p>
+                    <p>Democratization = Data for All</p>
+                    <p>Data Visualization and Self-Service for Insights</p>
+                    <p>Advanced Analytics for the Whole Enterprise</p>
                 </div>
                 <div class="pillars-right">
                     <p>
@@ -317,7 +630,7 @@
         <!-- Partnerships -->
         <div class="container">
             <h4 class="section-title">PARTNERSHIPS</h4>
-            <h2>Discover our partnerships.</h2>
+            <h2>Discover Our Partnerships</h2>
             <p class="intro">
                 We work closely with these partners and have deep knowledge of these tools to deliver the best results for a client’s specific needs and goals.
             </p>
@@ -330,64 +643,62 @@
             </div>
         </div>
         <!-- End Partnerships -->
+    </main>
 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h2><i class="fa-solid fa-cube"></i> Pranaalika Solutions</h2>
+                <p>Transforming businesses through cutting-edge data analytics and AI solutions.</p>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> H.No: 1/37-2 Peruru Anantapur - 515621 ANDHRA PRADESH</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 8886258662 </li>
+                    <li><i class="fa-solid fa-envelope"></i> adimurthi.adavala@pranaalika-tagline.com </li>
+                </ul>
+            </div>
 
-<!-- End Team Section-->
-<!--footer-->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-col">
-            <h2><i class="fa-solid fa-cube"></i> Pranaalika Solutions</h2>
-            <p>Transforming businesses through cutting-edge data analytics and AI solutions.</p>
-            <ul class="contact-info">
-                <li><i class="fa-solid fa-location-dot"></i> H.No: 1/37-2 Peruru Anantapur - 515621 ANDHRA PRADESH</li>
-                <li><i class="fa-solid fa-phone"></i> +91 8886258662 </li>
-                <li><i class="fa-solid fa-envelope"></i> adimurthi.adavala@pranaalika-tagline.com </li>
-            </ul>
-        </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="Data-service.html">Data Analytics</a></li>
+                    <li><a href="AI-Services.html">AI Services</a></li>
+                    <li><a href="Cloud & engineering.html">Cloud & Engineering</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-col">
-            <h3>Services</h3>
-            <ul>
-                  <li><a href="Data-service.html">Data Analytics</a></li>
-                 <li><a href="AI-Services.html">AI services</a></li>
-                   <li><a href="Cloud & engineering.html">Cloud & Engineering</a></li>
-            </ul>
-        </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="carrer.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-col">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="case-studies.html">Case Studies</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="carrer.html">Carrers</li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col newsletter">
-            <h3>Subscribe to Our Newsletter</h3>
-            <p>Get the latest insights and updates on data analytics and AI delivered to your inbox.</p>
-            <form>
-                <input type="email" placeholder="Your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="footer-col newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get the latest insights and updates on data analytics and AI delivered to your inbox.</p>
+                <form>
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-                 <p>
-                  Copyright &copy;
-                  <script>document.write(new Date().getFullYear());</script> All Rights Reserved | Powered by <a href="https://meghplat.com/" target="_blank" class="text-primary">Meghplat Analytics</a>
-              </p>
-    </div>
-</footer>
-<!--End Footer-->
+        <div class="footer-bottom">
+            <p>
+                Copyright ©
+                <script>document.write(new Date().getFullYear());</script> All Rights Reserved | Powered by <a href="https://meghplat.com/" target="_blank" class="text-primary">Meghplat Analytics</a>
+            </p>
+        </div>
+    </footer>
+
     <script src="../js/main.js"></script>
 </body>
 </html>
