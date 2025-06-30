@@ -44,7 +44,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
-    
 }
 
 /* Header */
@@ -72,7 +71,7 @@
     align-items: center;
     max-width: 1200px; /* Added max-width for better control */
     margin: 0 auto; /* Center the container */
-    padding:  10px; /* Added padding for better spacing */
+    padding: 10px; /* Added padding for better spacing */
 }
 
 /* Logo styling */
@@ -81,29 +80,19 @@
 }
 
 .logo a {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--white);
     display: flex;
     align-items: center;
     text-decoration: none; /* Ensure no underline */
 }
 
-#header.scrolled .logo a {
-    color: var(--primary-color);
+.logo-image {
+    height: 40px; /* Adjust based on your logo's dimensions */
+    width: auto;
+    transition: filter 0.3s ease; /* Smooth transition for filter changes */
 }
 
-.logo span {
-    color: var(--primary-color);
-    background-color: var(--white);
-    border-radius: 4px;
-    padding: 2px 8px;
-    margin-right: 8px;
-}
-
-#header.scrolled .logo span {
-    background-color: var(--primary-color);
-    color: var(--white);
+#header.scrolled .logo-image {
+    filter: none; /* Default state when scrolled */
 }
 
 /* Navigation wrapper to center nav-links and buttons */
@@ -147,6 +136,42 @@
 .nav-links a:hover::after,
 .nav-links a.active::after {
     width: 100%;
+}
+
+/* Dropdown styling */
+li.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Center dropdown */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    min-width: 160px;
+    z-index: 1000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: var(--white); /* Ensure dropdown has a background */
+}
+
+li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--text-color); /* Adjusted for better contrast */
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
 /* Dropdown styling */
