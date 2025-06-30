@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - DS AI Solutions</title>
+    <title>Projects - DS AI Solutions</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/responsive.css">
@@ -13,9 +13,9 @@
 <body>
     <header id="header">
     <div class="container">
-        <div class="logo">
-            <a href="../index.html">
-                <span>Pranaalika</span> Solutions
+         <div class="logo">
+            <a href="index.html">
+                <img src="../images/pranaalika-primary.svg" alt="Pranaalika Solutions Logo" class="logo-image">
             </a>
         </div>
         <div class="nav-wrapper">
@@ -49,10 +49,152 @@
 </header>
     <section class="page-hero">
     <div class="container">
-        <h1></h1>
-        <p>We're a team of data scientists, engineers, and business consultants passionate about helping organizations unlock the power of their data.</p>
+        <h1>Projects</h1>
+        <p>Our projects showcase how we help organizations unlock the power of their data. This emphasizes the forward-thinking nature of the project.</p>
     </div>
 </section>
+<!-- Project Showcase Section -->
+<section class="project-page">
+  <div class="project-container">
+    <h2 class="section-title">Our Projects</h2>
+    
+    <!-- Project Card -->
+    <div class="project-card">
+      <div class="project-header">
+        <h3>Intelligent Data Pipeline Automation</h3>
+        <span class="project-tech">Kafka · Azure · Python · Airflow</span>
+        <button class="toggle-btn">View Details</button>
+      </div>
+      <div class="project-body">
+        <p><strong>Problem:</strong> Manual data integration was causing delays and inconsistencies in reporting.</p>
+        <p><strong>Solution:</strong> We built an event-driven pipeline using Kafka for real-time ingestion, processed via Spark jobs scheduled with Airflow, and hosted on Azure.</p>
+        <p><strong>Impact:</strong> Reduced processing time by 80%, enabled real-time dashboards for business units, and saved hundreds of hours in manual reconciliation.</p>
+      </div>
+    </div>
+
+    <!-- Add more projects below by duplicating the project-card block -->
+
+    <div class="project-card">
+      <div class="project-header">
+        <h3>AI-Powered Customer Insights Platform</h3>
+        <span class="project-tech">MLFlow · Scikit-learn · Flask · PostgreSQL</span>
+        <button class="toggle-btn">View Details</button>
+      </div>
+      <div class="project-body">
+        <p><strong>Problem:</strong> Retail clients lacked actionable customer segmentation for targeted marketing.</p>
+        <p><strong>Solution:</strong> We developed an ML platform that identifies buying behavior using clustering algorithms and exposed the insights via a Flask-based dashboard.</p>
+        <p><strong>Impact:</strong> Increased targeted campaign conversion rates by 32% and improved customer retention metrics by 18%.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CSS Styles -->
+<style>
+.project-page {
+  background-color: #f9fafc;
+  padding: 60px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.project-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #1a237e;
+  text-align: center;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+  padding: 25px 30px;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.project-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #0d47a1;
+}
+
+.project-tech {
+  font-size: 0.95rem;
+  color: #607d8b;
+}
+
+.toggle-btn {
+  align-self: flex-start;
+  margin-top: 12px;
+  background: #1e88e5;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #1565c0;
+}
+
+.project-body {
+  margin-top: 20px;
+  display: none;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.project-body p {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .project-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-tech {
+    font-size: 0.85rem;
+  }
+
+  .toggle-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+</style>
+
+<!-- JavaScript to Toggle Project Details -->
+<script>
+  document.querySelectorAll(".toggle-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const body = btn.parentElement.nextElementSibling;
+      body.style.display = body.style.display === "block" ? "none" : "block";
+      btn.textContent = body.style.display === "block" ? "Hide Details" : "View Details";
+    });
+  });
+</script>
 
 
 
