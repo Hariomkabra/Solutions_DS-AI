@@ -302,16 +302,17 @@ li.dropdown:hover .dropdown-menu {
     color: var(--white);
     max-width: 600px;
     z-index: 10;
+    padding-bottom: 120px;
 }
 
 .hero-content h1 {
-    font-size: 48px;
+    font-size: 45px;
     margin-bottom: 24px;
     font-weight: 700;
 }
 
 .hero-content p {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 32px;
     line-height: 1.6;
 }
