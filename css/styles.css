@@ -85,7 +85,9 @@
 
 .logo-image {
     height: 50px;
-    width: auto;
+    max-width: 100%;
+    display: block;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 #header.scrolled .logo-image {
