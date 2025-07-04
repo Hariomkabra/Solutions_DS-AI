@@ -3,257 +3,691 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our portfolio of data engineering and automation solutions, showcasing expertise in real-time analytics, cloud migration, and intelligent automation frameworks.">
+    <meta name="keywords" content="data engineering, automation, real-time analytics, cloud migration, AI solutions">
+    <meta name="author" content="Pranaalika Solutions">
     <title>Projects - DS AI Solutions</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header id="header">
-    <div class="container">
-         <div class="logo">
-            <a href="../index.html">
-                <img src="../images/pranaalika-primary.svg" alt="Pranaalika Solutions Logo" class="logo-image">
-            </a>
-        </div>
-        <div class="nav-wrapper">
-            <nav>
-                 <ul class="nav-links">
-                    <li><a href="../index.html">HOME</a></li>
-                    <li class="dropdown">
-                        <a href="services.html">SERVICES</a>
-                        <ul class="dropdown-menu">
-                          
-                            <li><a href="AI-Services.html">AI SERVICES</a></li>
-                            <li><a href="Data-service.html">DATA ANALYTICS</a></li>
-                            <li><a href="Cloud & engineering.html">CLOUD & ENGG</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">ABOUT</a></li>
-                    <li><a href="projects.html" >PROJECTS</a></li>
-                    <li><a href="case-studies.html">STUDIES</a></li>
-                    <li><a href="carrer.html" >CAREERS</a></li>
-                    <li><a href="contact.html" >CONTACT</a></li>
-
-                </ul>
-            </nav>
-        </div>
-        <div class="mobile-menu-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-</header>
-    <section class="page-hero">
-    <div class="container">
-        <h1>Projects</h1>
-        <p>Our projects showcase how we help organizations unlock the power of their data. This emphasizes the forward-thinking nature of the project.</p>
-    </div>
-</section>
-<!-- Project Showcase Section -->
-<section class="project-page">
-  <div class="project-container">
-    <h2 class="section-title">Our Projects</h2>
-    
-    <!-- Project Card -->
-    <div class="project-card">
-      <div class="project-header">
-        <h3>Intelligent Data Pipeline Automation</h3>
-        <span class="project-tech">Kafka · Azure · Python · Airflow</span>
-        <button class="toggle-btn">View Details</button>
-      </div>
-      <div class="project-body">
-        <p><strong>Problem:</strong> Manual data integration was causing delays and inconsistencies in reporting.</p>
-        <p><strong>Solution:</strong> We built an event-driven pipeline using Kafka for real-time ingestion, processed via Spark jobs scheduled with Airflow, and hosted on Azure.</p>
-        <p><strong>Impact:</strong> Reduced processing time by 80%, enabled real-time dashboards for business units, and saved hundreds of hours in manual reconciliation.</p>
-      </div>
-    </div>
-
-    <!-- Add more projects below by duplicating the project-card block -->
-
-    <div class="project-card">
-      <div class="project-header">
-        <h3>AI-Powered Customer Insights Platform</h3>
-        <span class="project-tech">MLFlow · Scikit-learn · Flask · PostgreSQL</span>
-        <button class="toggle-btn">View Details</button>
-      </div>
-      <div class="project-body">
-        <p><strong>Problem:</strong> Retail clients lacked actionable customer segmentation for targeted marketing.</p>
-        <p><strong>Solution:</strong> We developed an ML platform that identifies buying behavior using clustering algorithms and exposed the insights via a Flask-based dashboard.</p>
-        <p><strong>Impact:</strong> Increased targeted campaign conversion rates by 32% and improved customer retention metrics by 18%.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- CSS Styles -->
-<style>
-.project-page {
-  background-color: #f9fafc;
-  padding: 60px 20px;
-  font-family: "Segoe UI", sans-serif;
-}
-
-.project-container {
-  max-width: 1100px;
-  margin: auto;
-}
-
-.section-title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: #1a237e;
-  text-align: center;
-}
-
-.project-card {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-  margin-bottom: 30px;
-  padding: 25px 30px;
-  transition: box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
-}
-
-.project-header {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.project-header h3 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #0d47a1;
-}
-
-.project-tech {
-  font-size: 0.95rem;
-  color: #607d8b;
-}
-
-.toggle-btn {
-  align-self: flex-start;
-  margin-top: 12px;
-  background: #1e88e5;
-  color: #fff;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.toggle-btn:hover {
-  background: #1565c0;
-}
-
-.project-body {
-  margin-top: 20px;
-  display: none;
-  font-size: 1rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-.project-body p {
-  margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  .project-header h3 {
-    font-size: 1.2rem;
-  }
-
-  .project-tech {
-    font-size: 0.85rem;
-  }
-
-  .toggle-btn {
-    padding: 6px 12px;
-    font-size: 0.9rem;
-  }
-}
-</style>
-
-<!-- JavaScript to Toggle Project Details -->
-<script>
-  document.querySelectorAll(".toggle-btn").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const body = btn.parentElement.nextElementSibling;
-      body.style.display = body.style.display === "block" ? "none" : "block";
-      btn.textContent = body.style.display === "block" ? "Hide Details" : "View Details";
-    });
-  });
-</script>
-
-<!-- End Team Section-->
-<!--footer-->
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-col">
-             <a href="../index.html">
-                <img src="../images/pranaalika-primary.svg" alt="Pranaalika Solutions Logo" class="logo-image">
-            </a><br>
-            <p>Transforming businesses through cutting-edge data analytics and AI solutions.</p>
-            <ul class="contact-info">
-                <li><i class="fa-solid fa-location-dot"></i>H.No: 1/37-2 Peruru Anantapur - 515621 ANDHRA PRADESH</li>
-                <li><i class="fa-solid fa-phone"></i> +91 8886258662 </li>
-                <li><i class="fa-solid fa-envelope"></i> adimurthi.adavala@pranaalika-tagline.com </li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>Services</h3>
-            <ul>
-                  <li><a href="Data-service.html">Data Analytics</a></li>
-                 <li><a href="AI-Services.html">AI services</a></li>
-                <li><a href="Cloud & engineering.html">Cloud & Engineering</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col">
-            <h3>Quick Links</h3>
-            <ul>
-                <li><a href="case-studies.html">Case Studies</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="carrer.html">Carrers</li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-col newsletter">
-            <h3>Subscribe to Our Newsletter</h3>
-            <p>Get the latest insights and updates on data analytics and AI delivered to your inbox.</p>
-            <form>
-                <input type="email" placeholder="Your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
-            <div class="footer-social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" aria-label="Pranaalika Solutions Home">
+                    <img src="../images/pranaalika-primary.svg" alt="Pranaalika Solutions Logo" class="logo-image" loading="lazy">
+                </a>
+            </div>
+            <div class="nav-wrapper">
+                <nav aria-label="Main navigation">
+                    <ul class="nav-links">
+                        <li><a href="../index.html">HOME</a></li>
+                        <li class="dropdown">
+                            <a href="services.html" aria-haspopup="true">SERVICES</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="AI-Services.html">AI SERVICES</a></li>
+                                <li><a href="Data-service.html">DATA ANALYTICS</a></li>
+                                <li><a href="Cloud & engineering.html">CLOUD & ENGG</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="projects.html" class="active">PROJECTS</a></li>
+                        <li><a href="case-studies.html">STUDIES</a></li>
+                        <li><a href="carrer.html">CAREERS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </div>
-    <div class="footer-bottom">
-                 <p>
-                  Copyright &copy;
-                  <script>document.write(new Date().getFullYear());</script> All Rights Reserved | Powered by <a href="https://meghplat.com/" target="_blank" class="text-primary">Meghplat Analytics</a>
+    </header>
+
+ <main>
+    <section class="page-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">Data Engineering & Automation Solutions</h1>
+            <p data-aos="fade-up" data-aos-delay="100">
+                Our portfolio showcases expertise in building enterprise-scale data pipelines, real-time analytics, and intelligent automation frameworks that drive business value.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-page">
+        <div class="project-container">
+            <div class="section-block" data-aos="fade-up">
+                <h2 class="section-title">Overview</h2>
+                <p class="section-text">
+                    Senior Data Engineer with 7+ years of experience delivering enterprise-scale data solutions and automation platforms. Specialized in building resilient data pipelines, real-time processing systems, and intelligent automation frameworks that drive business value.
                 </p>
-    </div>    
-</footer>
-<!--End Footer-->
+            </div>
+
+            <div class="section-block" data-aos="fade-up" data-aos-delay="100">
+                <h2 class="section-title">Core Expertise</h2>
+                <div class="expertise-grid">
+                    <div class="project-card" data-card-type="expertise" data-tags="real-time,streaming,kafka">
+                        <h3 class="card-title">🔄 Real-Time Data Processing & Streaming</h3>
+                        <p class="card-tech"><strong>Technologies:</strong> Apache Kafka, Samza, Azure Event Hubs, Strimzi</p>
+                        <p class="card-tech"><strong>Impact:</strong> Enabled real-time data-driven decisions</p>
+                        <ul class="card-list">
+                            <li>Designed Kafka clusters handling millions of events daily</li>
+                            <li>Built event-driven architectures for immediate insights</li>
+                            <li>Reduced data latency from hours to seconds</li>
+                            <li>Managed Kubernetes-based streaming infrastructure</li>
+                        </ul>
+                    </div>
+                    <div class="project-card" data-card-type="expertise" data-tags="etl,pipeline,airflow">
+                        <h3 class="card-title">📊 Enterprise Data Pipeline & ETL</h3>
+                        <p class="card-tech"><strong>Technologies:</strong> Talend, Airflow, Python, Java</p>
+                        <p class="card-tech"><strong>Impact:</strong> Saved 100+ manual hours monthly</p>
+                        <ul class="card-list">
+                            <li>Integrated 50+ heterogeneous data sources</li>
+                            <li>Designed fault-tolerant workflows</li>
+                            <li>Built 99.9% accurate data quality frameworks</li>
+                            <li>Reduced processing time by 70%</li>
+                        </ul>
+                    </div>
+                    <div class="project-card" data-card-type="expertise" data-tags="cloud,azure,terraform">
+                        <h3 class="card-title">☁️ Cloud Migration & Modernization</h3>
+                        <p class="card-tech"><strong>Technologies:</strong> Azure, Terraform, Kubernetes</p>
+                        <p class="card-tech"><strong>Impact:</strong> Reduced costs by 40%</p>
+                        <ul class="card-list">
+                            <li>Migrated on-premise workloads to Azure</li>
+                            <li>Implemented Infrastructure-as-Code</li>
+                            <li>Designed serverless architectures</li>
+                            <li>Built auto-scaling cloud-native solutions</li>
+                        </ul>
+                    </div>
+                    <div class="project-card" data-card-type="expertise" data-tags="data-warehouse,analytics">
+                        <h3 class="card-title">🏗️ Data Warehousing & Analytics</h3>
+                        <p class="card-tech"><strong>Technologies:</strong> Hive, MySQL, Azure Synapse</p>
+                        <p class="card-tech"><strong>Impact:</strong> Enabled self-service analytics for 100+ users</p>
+                        <ul class="card-list">
+                            <li>Designed efficient dimensional models</li>
+                            <li>Optimized query performance</li>
+                            <li>Ensured compliance with data governance</li>
+                            <li>Built real-time monitoring dashboards</li>
+                        </ul>
+                    </div>
+                    <div class="project-card" data-card-type="expertise" data-tags="automation,python">
+                        <h3 class="card-title">🤖 Intelligent Process Automation</h3>
+                        <p class="card-tech"><strong>Technologies:</strong> Python, Playwright, MCP, Pydantic</p>
+                        <p class="card-tech"><strong>Latest Project:</strong> Confluence-to-E-commerce Sync</p>
+                        <ul class="card-list">
+                            <li>Automated complex business workflows</li>
+                            <li>Built web automation frameworks</li>
+                            <li>Extracted data from unstructured sources</li>
+                            <li>Created self-healing systems</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-block" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="section-title">Featured Solutions</h2>
+                <div class="solution-grid">
+                    <div class="solution-card" data-card-type="solution" data-tags="streaming,kafka,spark" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="card-title">Enterprise Streaming Data Platform</h3>
+                        <p class="card-tech">Kafka · Azure Event Hubs · Spark · Kubernetes</p>
+                        <p><strong>Challenge:</strong> Fortune 500 client needed real-time supply chain visibility</p>
+                        <p><strong>Solution:</strong> Built end-to-end streaming platform processing 10M+ events daily</p>
+                        <p><strong>Result:</strong> 80% reduction in incident response time, $2M annual savings</p>
+                    </div>
+                    <div class="solution-card" data-card-type="solution" data-tags="cloud,azure,synapse" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="card-title">Cloud-Native Data Lake Migration</h3>
+                        <p class="card-tech">Azure Synapse · Terraform · Kubernetes</p>
+                        <p><strong>Challenge:</strong> Legacy infrastructure limiting business growth</p>
+                        <p><strong>Solution:</strong> Migrated 50TB+ data warehouse to Azure with zero downtime</p>
+                        <p><strong>Result:</strong> 3x performance improvement, 40% cost reduction</p>
+                    </div>
+                    <div class="solution-card" data-card-type="solution" data-tags="bi,airflow,grafana" data-aos="fade-up" data-aos-delay="500">
+                        <h3 class="card-title">Automated Business Intelligence Pipeline</h3>
+                        <p class="card-tech">Airflow · Python · Grafana</p>
+                        <p><strong>Challenge:</strong> Manual report generation taking days, prone to errors</p>
+                        <p><strong>Solution:</strong> Automated ETL workflows with data quality checks</p>
+                        <p><strong>Result:</strong> Real-time dashboards, 99.9% accuracy, 95% time savings</p>
+                    </div>
+                    <div class="solution-card" data-card-type="solution" data-tags="automation,ecommerce" data-aos="fade-up" data-aos-delay="600">
+                        <h3 class="card-title">E-commerce Synchronization Platform</h3>
+                        <p class="card-tech">Python · Playwright · Pydantic</p>
+                        <p><strong>Challenge:</strong> Manual product updates causing delays and errors</p>
+                        <p><strong>Solution:</strong> Intelligent automation platform with pattern recognition</p>
+                        <p><strong>Result:</strong> 90% reduction in processing time, zero manual errors</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-block" data-aos="fade-up" data-aos-delay="300">
+                <h2 class="section-title">Technical Proficiencies</h2>
+                <div class="project-card" data-card-type="tech">
+                    <ul class="card-list">
+                        <li><strong>Big Data:</strong> Hadoop, Hive, Kafka, Samza, Spark</li>
+                        <li><strong>Cloud Platforms:</strong> Azure (Event Hubs, Synapse, Functions), AWS basics</li>
+                        <li><strong>Languages:</strong> Python, Java, SQL, Bash</li>
+                        <li><strong>Databases:</strong> MySQL, PostgreSQL, MongoDB, Redis</li>
+                        <li><strong>ETL/Orchestration:</strong> Talend, Airflow, Apache NiFi</li>
+                        <li><strong>DevOps:</strong> Kubernetes, Docker, Terraform, CI/CD</li>
+                        <li><strong>Monitoring:</strong> Grafana, Prometheus, ELK Stack</li>
+                        <li><strong>Automation:</strong> Playwright, Selenium, REST APIs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-block" data-aos="fade-up" data-aos-delay="400">
+                <h2 class="section-title">Why Work With Me?</h2>
+                <div class="project-card" data-card-type="why">
+                    <ul class="card-list">
+                        <li><strong>Proven Track Record:</strong> 7+ years delivering mission-critical data solutions</li>
+                        <li><strong>End-to-End Expertise:</strong> From architecture design to production deployment</li>
+                        <li><strong>Business-Focused:</strong> Solutions aligned with business objectives</li>
+                        <li><strong>Scalability Mindset:</strong> Built systems handling TB-scale data</li>
+                        <li><strong>Innovation Driver:</strong> Continuously exploring new technologies</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-block" data-aos="fade-up" data-aos-delay="500">
+                <h2 class="section-title">Services Offered</h2>
+                <div class="project-card" data-card-type="services">
+                    <ul class="card-list">
+                        <li><strong>Data Architecture Consulting:</strong> Design scalable, cost-effective data solutions</li>
+                        <li><strong>ETL/Pipeline Development:</strong> Build robust data integration workflows</li>
+                        <li><strong>Cloud Migration:</strong> Modernize legacy systems with cloud-native architectures</li>
+                        <li><strong>Real-time Analytics:</strong> Implement streaming solutions for immediate insights</li>
+                        <li><strong>Process Automation:</strong> Eliminate manual tasks with intelligent automation</li>
+                        <li><strong>Performance Optimization:</strong> Tune systems for maximum efficiency</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-block cta-section" data-aos="fade-up" data-aos-delay="600">
+                <h2 class="section-title">Ready to Transform Your Data Challenges?</h2>
+                <p class="section-text">Let's discuss how my expertise can drive your business forward.</p>
+                <a href="contact.html" class="cta-btn" aria-label="Contact us">Get in Touch</a>
+
+
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .project-page {
+            background-color: #f9fafc;
+            padding: 60px 20px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .project-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-block {
+            margin-bottom: 48px;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a237e;
+            text-align: center;
+            margin-bottom: 24px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: #1e88e5;
+            border-radius: 2px;
+        }
+
+        .section-text {
+            font-size: 1.1rem;
+            color: #333;
+        }
+        .section-text {
+            line-height: 1.7;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            margin-bottom: 24px;
+        }
+
+        .expertise-grid, .solution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            padding: 16px;
+        }
+
+        .project-card, .solution-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 28px;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeInCard 0.6s ease forwards;
+            transition: all 0.4s cubic-bezier(0.25, 1, 0.3, 1);
+        }
+
+        
+
+        .project-card[data-card-type="expertise"]:hover::before {
+            left: 100%;
+        }
+
+        /* Solution card hover: Content scale and border glow */
+        .solution-card[data-card-type="solution"]:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25), 0 0 15px rgba(30, 136, 229, 0.4);
+        }
+
+        .solution-card[data-card-type="solution"]::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid transparent;
+            border-radius: 16px;
+            transition: border 0.3s ease;
+            z-index: 1;
+        }
+
+        .solution-card[data-card-type="solution"]:hover::before {
+            border-color: rgba(30, 136, 229, 0.6);
+        }
+
+        /* Tech card hover: Lift and radial glow */
+        .project-card[data-card-type="tech"]:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25), 0 0 20px rgba(30, 136, 229, 0.3);
+        }
+
+        .project-card[data-card-type="tech"]::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle, rgba(30, 136, 229, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: -1;
+        }
+
+        .project-card[data-card-type="tech"]:hover::after {
+            opacity: 1;
+        }
+
+        /* Why card hover: Tilt and color shift */
+        .project-card[data-card-type="why"]:hover {
+            transform: rotate(-2deg) scale(1.03);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        }
+
+        .project-card[data-card-type="why"]::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(30, 136, 229, 0.2), transparent);
+            transition: top 0.5s ease;
+            z-index: 0;
+        }
+
+        .project-card[data-card-type="why"]:hover::before {
+            top: 100%;
+        }
+
+        /* Services card hover: Pulse border and scale */
+        .project-card[data-card-type="services"]:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card[data-card-type="services"]::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid transparent;
+            border-radius: 16px;
+            animation: none;
+            transition: border 0.3s ease;
+            z-index: 1;
+        }
+
+        .project-card[data-card-type="services"]:hover::before {
+            animation: pulseBorder 1.5s infinite;
+        }
+
+        @keyframes pulseBorder {
+            0%, 100% { border-color: transparent; }
+            50% { border-color: rgba(30, 136, 229, 0.5); }
+        }
+
+        .card-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #0d47a1;
+            margin-bottom: 12px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .project-card:hover .card-title, .solution-card:hover .card-title {
+            color: #1e88e5;
+            transform: translateY(-5px);
+        }
+
+        .card-tech {
+            font-size: 0.95rem;
+            color: #546e7a;
+            margin-bottom: 16px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .project-card:hover .card-tech, .solution-card:hover .card-tech {
+            color: #0d47a1;
+            transform: translateY(-3px);
+        }
+
+        .card-list {
+            list-style: none;
+            padding-left: 16px;
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-list li {
+            position: relative;
+            margin-bottom: 12px;
+            padding-left: 20px;
+            opacity: 0;
+            animation: fadeInList 0.6s ease forwards;
+            animation-delay: calc(0.1s * var(--i));
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .project-card:hover .card-list li, .solution-card:hover .card-list li {
+            transform: translateX(10px);
+        }
+
+        .card-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #1e88e5;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .card-list li::before, .solution-card:hover .card-list li::before {
+            transform: scale(1.3) rotate(20deg);
+        }
+
+        @keyframes fadeInCard {
+            from {
+                opacity: 0;
+                transform: translateY(24px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes fadeInList {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .cta-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1e88e5, #1565c0);
+            border-radius: 16px;
+            color: #fff;
+        }
+
+        .cta-section .section-title {
+            color: #fff;
+        }
+
+        .cta-section .section-text {
+            color: #f5f5f5;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #fff;
+            color: #1e88e5;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: all 0.9s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-btn:hover {
+            background: #f5f5f5;
+            color: #1565c0;
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .cta-btn:active {
+    background: gold;
+    color: white;
+    box-shadow: 0 4px 14px rgba(255, 215, 0, 0.5);
+    transform: translateY(2px) scale(0.98);
+}
+ 
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .expertise-grid, .solution-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+
+            .section-title {
+                font-size: 2.2rem;
+            }
+
+            .card-title {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .project-page {
+                padding: 48px 16px;
+            }
+
+            .project-container {
+                padding: 0 12px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .card-title {
+                font-size: 1.3rem;
+            }
+
+            .card-tech, .card-list {
+                font-size: 0.95rem;
+            }
+
+            .cta-btn {
+                padding: 12px 24px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .expertise-grid, .solution-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .card-title {
+                font-size: 1.2rem;
+            }
+
+            .card-tech, .card-list {
+                font-size: 0.9rem;
+            }
+
+            .project-card, .solution-card {
+                padding: 16px;
+            }
+
+            .cta-btn {
+                padding: 10px 20px;
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out-quart',
+            once: true,
+            offset: 100
+        });
+
+        // Lazy loading for cards
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.project-card, .solution-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Add index for staggered animations
+        document.querySelectorAll('.card-list li').forEach((li, index) => {
+            li.style.setProperty('--i', index);
+        });
+    </script>
+</main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="../index.html" aria-label="Pranaalika Solutions Home">
+                    <img src="../images/pranaalika-primary.svg" alt="Pranaalika Solutions Logo" class="logo-image" loading="lazy">
+                </a>
+                <p>Transforming businesses through cutting-edge data analytics and AI solutions.</p>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i>H.No: 1/37-2 Peruru Anantapur - 515621 ANDHRA PRADESH</li>
+                    <li><i class="fa-solid fa-phone"></i> +91 8886258662 </li>
+                    <li><i class="fa-solid fa-envelope"></i> adimurthi.adavala@pranaalika-tagline.com </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="Data-service.html">Data Analytics</a></li>
+                    <li><a href="AI-Services.html">AI services</a></li>
+                    <li><a href="Cloud & engineering.html">Cloud & Engineering</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="carrer.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get the latest insights and updates on data analytics and AI delivered to your inbox.</p>
+                <form aria-label="Newsletter subscription">
+                    <input type="email" placeholder="Your email address" required aria-label="Email address">
+                    <button type="submit" aria-label="Subscribe to newsletter">Subscribe</button>
+                </form>
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                Copyright ©
+                <script>document.write(new Date().getFullYear());</script> All Rights Reserved | Powered by <a href="https://meghplat.com/" target="_blank" class="text-primary">Meghplat Analytics</a>
+            </p>
+        </div>
+    </footer>
+
+  
     <script src="../js/main.js"></script>
 </body>
 </html>
